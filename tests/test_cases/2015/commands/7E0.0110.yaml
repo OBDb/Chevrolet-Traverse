@@ -4,8 +4,8 @@ test_cases:
     MAF: 0
   response: '7E80441100000'
 - expected_values:
-    MAF: 5.1
-  response: 7E804411001FE
+    MAF: 33.27
+  response: 7E80441100CFF
 - expected_values:
     MAF: 75.12
   response: 7E80441101D58
