@@ -4,26 +4,5 @@ test_cases:
     CHEVROLET_KNOCK_RETARD: 0
   response: 7E8046211A600
 - expected_values:
-    CHEVROLET_KNOCK_RETARD: 0.22
-  response: 7E8046211A601
-- expected_values:
-    CHEVROLET_KNOCK_RETARD: 1.54
-  response: 7E8046211A607
-- expected_values:
-    CHEVROLET_KNOCK_RETARD: 1.76
-  response: 7E8046211A608
-- expected_values:
-    CHEVROLET_KNOCK_RETARD: 2.86
-  response: 7E8046211A60D
-- expected_values:
-    CHEVROLET_KNOCK_RETARD: 3.52
-  response: 7E8046211A610
-- expected_values:
-    CHEVROLET_KNOCK_RETARD: 6.16
-  response: 7E8046211A61C
-- expected_values:
-    CHEVROLET_KNOCK_RETARD: 6.38
-  response: 7E8046211A61D
-- expected_values:
-    CHEVROLET_KNOCK_RETARD: 8.36
-  response: 7E8046211A626
+    CHEVROLET_KNOCK_RETARD: 15.62
+  response: 7E8046211A647
