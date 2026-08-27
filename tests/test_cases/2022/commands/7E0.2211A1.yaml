@@ -1,0 +1,26 @@
+command_id: 7E0.2211A1
+test_cases:
+- expected_values:
+    CHEVROLET_RUNTM: 127
+  response: 7E8056211A1007F
+- expected_values:
+    CHEVROLET_RUNTM: 134
+  response: 7E8056211A10086
+- expected_values:
+    CHEVROLET_RUNTM: 257
+  response: 7E8056211A10101
+- expected_values:
+    CHEVROLET_RUNTM: 514
+  response: 7E8056211A10202
+- expected_values:
+    CHEVROLET_RUNTM: 517
+  response: 7E8056211A10205
+- expected_values:
+    CHEVROLET_RUNTM: 640
+  response: 7E8056211A10280
+- expected_values:
+    CHEVROLET_RUNTM: 668
+  response: 7E8056211A1029C
+- expected_values:
+    CHEVROLET_RUNTM: 778
+  response: 7E8056211A1030A
