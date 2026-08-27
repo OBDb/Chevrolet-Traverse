@@ -1,0 +1,29 @@
+command_id: 7E0.7E8.2213AF
+test_cases:
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 0
+  response: 7E8046213AF00
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 4.70588
+  response: 7E8046213AF0C
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 5.4902
+  response: 7E8046213AF0E
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 9.01961
+  response: 7E8046213AF17
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 9.80392
+  response: 7E8046213AF19
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 17.2549
+  response: 7E8046213AF2C
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 20.39216
+  response: 7E8046213AF34
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 21.17647
+  response: 7E8046213AF36
+- expected_values:
+    CHEVROLET_COOLING_FAN_MOTOR_CMD: 27.45098
+  response: 7E8046213AF46
