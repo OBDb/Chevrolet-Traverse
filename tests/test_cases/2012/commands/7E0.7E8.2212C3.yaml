@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.2212C3
+test_cases:
+- expected_values:
+    CHEVROLET_INJECTOR_DUTY_CYCLE_BANK_1: 0.765
+  response: '7E8 05 62 12 C3 00 33 '
+- expected_values:
+    CHEVROLET_INJECTOR_DUTY_CYCLE_BANK_1: 1.2
+  response: '7E8 05 62 12 C3 00 50 '
+- expected_values:
+    CHEVROLET_INJECTOR_DUTY_CYCLE_BANK_1: 0.84
+  response: 7E8056212C30038
+- expected_values:
+    CHEVROLET_INJECTOR_DUTY_CYCLE_BANK_1: 0.96
+  response: 7E8056212C30040
+- expected_values:
+    CHEVROLET_INJECTOR_DUTY_CYCLE_BANK_1: 1.05
+  response: 7E8056212C30046
+- expected_values:
+    CHEVROLET_INJECTOR_DUTY_CYCLE_BANK_1: 1.275
+  response: 7E8056212C30055
+- expected_values:
+    CHEVROLET_INJECTOR_DUTY_CYCLE_BANK_1: 1.38
+  response: 7E8056212C3005C
