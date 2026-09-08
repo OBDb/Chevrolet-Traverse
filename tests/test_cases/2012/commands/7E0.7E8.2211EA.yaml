@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211EA
+test_cases:
+- expected_values:
+    CHEVROLET_MISFIRES_C5_CUR: 0
+  response: '7E8 04 62 11 EA 00 '
+- expected_values:
+    CHEVROLET_MISFIRES_C5_CUR: 0
+  response: 7E8046211EA00
