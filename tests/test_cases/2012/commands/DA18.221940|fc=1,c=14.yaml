@@ -1,0 +1,20 @@
+command_id: DA18.221940|fc=1,c=14
+test_cases:
+- expected_values:
+    CHEVROLET_TFT: 49
+  response: "7E8 04 62 19 40 59 \n7EA 04 62 19 40 5A "
+- expected_values:
+    CHEVROLET_TFT: 45
+  response: |-
+    7E80462194055
+    7EA0462194056
+- expected_values:
+    CHEVROLET_TFT: 85
+  response: |-
+    7E8046219407D
+    7EA046219407D
+- expected_values:
+    CHEVROLET_TFT: 31
+  response: |-
+    7EA0462194047
+    7E80462194047
