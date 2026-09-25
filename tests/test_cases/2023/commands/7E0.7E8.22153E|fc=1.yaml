@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22153E|fc=1
+test_cases:
+- expected_values:
+    TRAVERSE_EOT_DA11: 150
+  response: 7E80462153EBE
