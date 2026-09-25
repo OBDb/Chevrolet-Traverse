@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22328A|fc=1
+test_cases:
+- expected_values:
+    TRAVERSE_BP_DES: 0
+  response: 7E80562328A0000

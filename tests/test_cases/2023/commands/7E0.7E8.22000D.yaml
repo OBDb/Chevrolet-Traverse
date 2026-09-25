@@ -1,8 +1,13 @@
 command_id: 7E0.7E8.22000D
 test_cases:
 - expected_values:
-    CHEVROLET_VSS: 0
+    TRAVERSE_VSS: 0
   response: 7E80462000D00
 - expected_values:
-    CHEVROLET_VSS: 138
+    TRAVERSE_VSS: 15
+  response: |-
+    7E80462000D0F
+    7EA0462000D0F
+- expected_values:
+    TRAVERSE_VSS: 138
   response: 7E80462000D8A

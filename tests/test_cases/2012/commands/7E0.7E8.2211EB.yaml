@@ -1,0 +1,13 @@
+command_id: 7E0.7E8.2211EB
+test_cases:
+- expected_values:
+    TRAVERSE_MISFIRES_C6_CUR: 0
+  response: '7E8 04 62 11 EB 00 '
+- expected_values:
+    TRAVERSE_MISFIRES_C6_CUR: 0
+  response: 7E8046211EB00
+- expected_values:
+    TRAVERSE_MISFIRES_C6_CUR: 0
+  response: |-
+    SEARCHING...
+    7E8046211EB00
