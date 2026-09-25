@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22005C|fc=1
+test_cases:
+- expected_values:
+    TRAVERSE_EOT: 97
+  response: 7E80462005C89
