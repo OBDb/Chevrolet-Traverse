@@ -1,5 +1,0 @@
-command_id: 7E0.7E8.222345
-test_cases:
-- expected_values:
-    TRAVERSE_EOP: 0
-  response: '7E80462234500'
