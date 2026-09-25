@@ -1,0 +1,5 @@
+command_id: 7E2.7EA.22295A|fc=1
+test_cases:
+- expected_values:
+    TRAVERSE_TF_T_FLTED: 95
+  response: 7EA0462295A87
