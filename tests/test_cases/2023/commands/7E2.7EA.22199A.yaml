@@ -4,6 +4,9 @@ test_cases:
     TRAVERSE_CURRENT_GEAR_VAR_2: 1
   response: 7EA0462199A01
 - expected_values:
+    TRAVERSE_CURRENT_GEAR_VAR_2: 2
+  response: 7EA0462199A02
+- expected_values:
     TRAVERSE_CURRENT_GEAR_VAR_2: 4
   response: 7EA0462199A04
 - expected_values:
@@ -15,3 +18,9 @@ test_cases:
 - expected_values:
     TRAVERSE_CURRENT_GEAR_VAR_2: 7
   response: 7EA0462199A07
+- expected_values:
+    TRAVERSE_CURRENT_GEAR_VAR_2: 8
+  response: 7EA0462199A08
+- expected_values:
+    TRAVERSE_CURRENT_GEAR_VAR_2: 9
+  response: 7EA0462199A09
