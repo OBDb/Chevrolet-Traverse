@@ -3,6 +3,22 @@
     { "hdr": "7E2", "type": "transmission" }
   ],
   "commands": [
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "4051"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_FL_WHL_SPD", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "4052"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_FR_WHL_SPD", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "4053"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_RR_WHL_SPD", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "760", "rax": "768", "dbg": true, "cmd": {"22": "4054"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_RL_WHL_SPD", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
 { "hdr": "7E0", "cmd": {"22": "11A1"}, "freq": 1, "dbgfilter": { "to": 2010, "years": [2013, 2014, 2017, 2020], "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_RUNTM", "path": "Clocks", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start"}
@@ -14,6 +30,10 @@
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "0010"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_MAF", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "mul": 100, "div": 10000, "unit": "gramsPerSecond" }, "name": "Mass airflow sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0052"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_ETHANOL_CONTENT_FUEL", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Ethanol content of fuel"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "005C"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
@@ -27,9 +47,45 @@
   "signals": [
     {"id": "TRAVERSE_TOTAL_FUEL_CONSUMPTION_RATE", "path": "Fuel", "fmt": { "len": 16, "max": 1310.7, "mul": 200, "div": 10000, "unit": "gramsPerSecond" }, "name": "Total fuel consumption rate"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1141"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_IGN_1_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Ignition 1 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1145"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_HEATED_OXYGEN_SENS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "millivolts" }, "name": "Heated oxygen sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "114B"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_EGR_V", "path": "Engine", "fmt": { "len": 8, "max": 5, "div": 51, "unit": "volts" }, "name": "Exhaust gas recirculation voltage"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1154"}, "freq": 5, "dbgfilter": { "to": 2017, "years": [2020], "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_EOT_CALC", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Calculated engine oil temperature", "suggestedMetric": "engineOilTemperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1161"}, "freq": 5,
+  "signals": [
+    {"id": "TRAVERSE_AAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Outside air temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1170"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_EVAPORATIVE", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Evaporative emissions purge"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1171"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_EGR_DUTY", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Exhaust gas recirculation duty cycle"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1172"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_IDLE_AIR_CTRL_POS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle air control position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1192"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_DES_IDLE_SPD", "path": "Movement", "fmt": { "len": 8, "max": 3187.5, "mul": 12.5, "unit": "rpm" }, "name": "Desired idle speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1193"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_INJ_WIDTH_CYL_1", "path": "Engine", "fmt": { "len": 16, "max": 1000, "div": 65.535, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "1194"}, "freq": 1,
   "signals": [
@@ -51,6 +107,22 @@
   "signals": [
     {"id": "TRAVERSE_FUEL_INJECTION_C6", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 6"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1199"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_INJ_WIDTH_CYL_7", "path": "Engine", "fmt": { "len": 16, "max": 1000, "div": 65.535, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 7"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "119D"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BAROMETRIC_P_V8", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure, V8"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "119E"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_AIR_FUEL_RAT_CMD", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "scalar" }, "name": "Air/fuel ratio, commanded"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "119F"}, "freq": 30,
+  "signals": [
+    {"id": "TRAVERSE_REMAINING_OIL_LIFE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Remaining oil life"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11A6"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015, 2016, 2017, 2020], "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_KNOCK_RETARD", "path": "Engine", "fmt": { "len": 8, "max": 56.1, "mul": 22, "div": 100, "unit": "degrees" }, "name": "Knock retard"}
@@ -63,9 +135,49 @@
   "signals": [
     {"id": "TRAVERSE_MISFIRES_C6_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 6"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11EC"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
+  "signals": [
+    {"id": "TRAVERSE_MIS_CURRENT_7", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 7"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11ED"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+  "signals": [
+    {"id": "TRAVERSE_MIS_CURRENT_8", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 8"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F8"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_MIS_HISTORY_5", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F9"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_MIS_HISTORY_6", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11FA"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_MIS_HISTORY_7", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 7"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11FB"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_MIS_HISTORY_8", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 8"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1200"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015, 2016, 2017, 2020], "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_TOTAL_MISFIRE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Total misfire"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1201"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_MIS_HISTORY_1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1202"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_MIS_HISTORY_2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1203"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_MIS_HISTORY_3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 3"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1204"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_MIS_HISTORY_4", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1205"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015, 2016, 2017, 2020], "from": 2024 },
   "signals": [
@@ -82,6 +194,22 @@
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1208"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015, 2016, 2017, 2020], "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_MISFIRES_C4_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1251"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BAROMETRIC_P_V6", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure, V6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "125D"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_KNOCK_RETARD_ALT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "degrees" }, "name": "Knock retard, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "125E"}, "freq": 3600,
+  "signals": [
+    {"id": "TRAVERSE_KNOCK_SENS_ACTIVE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock sensor active counter"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "129A"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_INJ_WIDTH_CYL_8", "path": "Engine", "fmt": { "len": 16, "max": 1000, "div": 65.535, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 8"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "12C3"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015, 2016, 2017, 2020], "from": 2024 },
   "signals": [
@@ -103,9 +231,101 @@
   "signals": [
     {"id": "TRAVERSE_EOP_DA11", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1538"}, "freq": 5,
+  "signals": [
+    {"id": "TRAVERSE_IAT_2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature 2"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "153E"}, "freq": 5, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2016, 2017, 2018, 2019, 2020, 2021, 2022], "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_EOT_DA11", "path": "Engine", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1564"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_AC_HIGH_SIDE_P", "path": "Engine", "fmt": { "len": 8, "max": 515.1, "mul": 2.02, "unit": "psi" }, "name": "Air conditioning high side pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "162F"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BALANCE_RATE_CYL_1", "path": "Engine", "fmt": { "len": 16, "max": 511.984375, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1630"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BALANCE_RATE_CYL_2", "path": "Engine", "fmt": { "len": 16, "max": 511.984375, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1631"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BALANCE_RATE_CYL_3", "path": "Engine", "fmt": { "len": 16, "max": 511.984375, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 3"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1632"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BALANCE_RATE_CYL_4", "path": "Engine", "fmt": { "len": 16, "max": 511.984375, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1633"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BALANCE_RATE_CYL_5", "path": "Engine", "fmt": { "len": 16, "max": 511.984375, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 5"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1634"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BALANCE_RATE_CYL_6", "path": "Engine", "fmt": { "len": 16, "max": 511.984375, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1635"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BALANCE_RATE_CYL_7", "path": "Engine", "fmt": { "len": 16, "max": 511.984375, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 7"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1636"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_BALANCE_RATE_CYL_8", "path": "Engine", "fmt": { "len": 16, "max": 511.984375, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 8"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1940"}, "freq": 5, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022], "from": 2024 },
+  "signals": [
+    {"id": "TRAVERSE_ATF_T_VAR_1", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1991"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_TQ_CONV_CLU_SLIP_SPD", "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1992"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_LAST_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "Last shift time"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1993"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_1_2_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "1-2 shift time"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1994"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_2_3_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "2-3 shift time"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1995"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_3_4_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "3-4 shift time"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1997"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_1_2_SHIFT_ERROR", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "1-2 shift error"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1998"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_2_3_SHIFT_ERROR", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "2-3 shift error"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1999"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_3_4_SHIFT_ERROR", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "3-4 shift error"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "199A"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_CURRENT_GEAR_7E0", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "199E"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_P_CTRL_SOLENOID_ACT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "milliamps" }, "name": "Pressure control solenoid current, actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "199F"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_P_CTRL_SOLENOID", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "milliamps" }, "name": "Pressure control solenoid current, reference"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "19DE"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_ENG_TQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Engine torque"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "20AC"}, "freq": 1,
   "signals": [
@@ -139,6 +359,10 @@
   "signals": [
     {"id": "TRAVERSE_CHARGE_AIR_COOLER_T_SNS_2", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charge air cooler temperature sensor 2"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3201"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_CURRENT_GEAR_VAR_3", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear, variant 3"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "3218"}, "freq": 5,
   "signals": [
     {"id": "TRAVERSE_FUEL_T", "path": "Fuel", "fmt": { "len": 8, "max": 127.5, "mul": 50, "div": 100, "unit": "celsius" }, "name": "Fuel temperature"}
@@ -171,6 +395,18 @@
   "signals": [
     {"id": "TRAVERSE_EO_LIFE_REMAINING", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Engine oil life remaining"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F432"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_FUEL_TANK_P", "path": "Fuel", "fmt": { "len": 16, "max": 1.966049, "div": 33333.3333333333, "unit": "psi" }, "name": "Fuel tank pressure"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1940"}, "freq": 5,
+  "signals": [
+    {"id": "TRAVERSE_ATF_T_VAR_3", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 3"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "280D"}, "freq": 5,
+  "signals": [
+    {"id": "TRAVERSE_ATF_T_VAR_8", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 8"}
+  ]},
 { "hdr": "7E2", "rax": "7EA", "cmd": {"22": "1940"}, "freq": 5, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015, 2016, 2017, 2020], "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_ATF_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
@@ -179,13 +415,41 @@
   "signals": [
     {"id": "TRAVERSE_TC_SLIP_VSS", "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "mul": 1250, "div": 10000, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
   ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "199A"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_CURRENT_GEAR_VAR_2", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear, variant 2"}
+  ]},
 { "hdr": "7E2", "rax": "7EA", "fcm1": true, "dbg": true, "cmd": {"22": "1B30"}, "freq": 0.25,
   "signals": [
     {"id": "TRAVERSE_CURRENT_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 252, "min": -3, "add": -3, "unit": "scalar" }, "name": "Current gear"}
   ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "280D"}, "freq": 5,
+  "signals": [
+    {"id": "TRAVERSE_ATF_T_VAR_6", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 6"}
+  ]},
 { "hdr": "7E2", "rax": "7EA", "fcm1": true, "cmd": {"22": "295A"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_TF_T_FLTED", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, filtered"}
+  ]},
+{ "hdr": "7E3", "rax": "7EB", "dbg": true, "cmd": {"22": "280D"}, "freq": 5,
+  "signals": [
+    {"id": "TRAVERSE_ATF_T_VAR_7", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 7"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "1940"}, "freq": 5,
+  "signals": [
+    {"id": "TRAVERSE_ATF_T_VAR_5", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 5"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "1941"}, "freq": 1,
+  "signals": [
+    {"id": "TRAVERSE_TRANS_INPUT_SHFT_SPD", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "rpm" }, "name": "Transmission input shaft speed"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "1942"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_OUTPUT_SHFT_SPD", "path": "Movement", "fmt": { "len": 8, "max": 63.75, "div": 4, "unit": "rpm" }, "name": "Output shaft speed"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "19A1"}, "freq": 0.25,
+  "signals": [
+    {"id": "TRAVERSE_GEAR_RAT", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear ratio"}
   ]},
 { "hdr": "DA1A", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "448F"}, "freq": 30,
   "signals": [

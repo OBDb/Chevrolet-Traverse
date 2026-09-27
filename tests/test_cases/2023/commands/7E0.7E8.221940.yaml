@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221940
+test_cases:
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 34
+  response: 7E8046219404A
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 40
+  response: '7E80462194050'
