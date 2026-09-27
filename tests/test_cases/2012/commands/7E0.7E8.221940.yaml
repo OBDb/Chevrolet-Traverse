@@ -1,0 +1,31 @@
+command_id: 7E0.7E8.221940
+test_cases:
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 49
+  response: "7E8 04 62 19 40 59 \n7EA 04 62 19 40 5A "
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 45
+  response: |-
+    7E80462194055
+    7EA0462194056
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 85
+  response: |-
+    7E8046219407D
+    7EA046219407D
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 48
+  response: "7EA 04 62 19 40 58 \n7E8 04 62 19 40 58 "
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 87
+  response: "7EA 04 62 19 40 80 \n7E8 04 62 19 40 7F "
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 31
+  response: |-
+    7EA0462194047
+    7E80462194047
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 86
+  response: |-
+    7EA046219407F
+    7E8046219407E
