@@ -325,7 +325,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "19DE"}, "freq": 0.25,
   "signals": [
-    {"id": "TRAVERSE_ENG_TQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Engine torque"}
+    {"id": "TRAVERSE_ENG_TQ", "path": "Engine", "fmt": { "len": 16, "max": 444267.6462, "mul": 6.779089742, "unit": "newtonMeters" }, "name": "Engine torque"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "20AC"}, "freq": 1,
   "signals": [
