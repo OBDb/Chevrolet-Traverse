@@ -1,8 +1,8 @@
 command_id: 7E2.7EA.221940
 test_cases:
 - expected_values:
-    TRAVERSE_ATF_T: 23
-  response: 7EA046219403F
+    TRAVERSE_ATF_T: 22
+  response: 7EA046219403E
 - expected_values:
     TRAVERSE_ATF_T: 102
   response: 7EA046219408E
