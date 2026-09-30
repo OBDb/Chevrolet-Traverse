@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.220010|fc=1
 test_cases:
 - expected_values:
+    TRAVERSE_MAF: 0
+  response: '7E8056200100000'
+- expected_values:
     TRAVERSE_MAF: 11.75
   response: '7E8056200100497'
 - expected_values:

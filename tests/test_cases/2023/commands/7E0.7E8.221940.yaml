@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     TRAVERSE_ATF_T_VAR_1: 40
   response: '7E80462194050'
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 61
+  response: '7E80462194065'
