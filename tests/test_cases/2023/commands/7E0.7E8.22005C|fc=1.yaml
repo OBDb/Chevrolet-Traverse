@@ -4,6 +4,9 @@ test_cases:
     TRAVERSE_EOT: 59
   response: 7E80462005C63
 - expected_values:
+    TRAVERSE_EOT: 69
+  response: 7E80462005C6D
+- expected_values:
     TRAVERSE_EOT: 90
   response: 7E80462005C82
 - expected_values:
