@@ -68,8 +68,8 @@ supported_commands_by_ecu:
 unsupported_commands_by_ecu:
   "7E0":
   - 7E0.7E8.221C1B
-  - 7E0.7E8.22248E:TRAVERSE_TP_FL
-  - 7E0.7E8.222490:TRAVERSE_TP_RR
+  - 7E0.7E8.22248E
+  - 7E0.7E8.222490
   - 7E0.7E8.223812:TRAVERSE_COOLING_FAN_CMD
   - 7E0.7E8.22C902
   "7E4":
