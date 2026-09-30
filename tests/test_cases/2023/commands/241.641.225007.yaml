@@ -15,3 +15,9 @@ test_cases:
 - expected_values:
     TRAVERSE_TP_RR: 250.25
   response: 641056250070FA4
+- expected_values:
+    TRAVERSE_TP_RR: 253
+  response: 641056250070FD0
+- expected_values:
+    TRAVERSE_TP_RR: 255.75
+  response: 641056250070FFC
