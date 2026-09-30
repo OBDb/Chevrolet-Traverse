@@ -12,3 +12,15 @@ test_cases:
 - expected_values:
     TRAVERSE_TP_FR: 242
   response: 641056250060F20
+- expected_values:
+    TRAVERSE_TP_FR: 244.75
+  response: 641056250060F4C
+- expected_values:
+    TRAVERSE_TP_FR: 247.5
+  response: 641056250060F78
+- expected_values:
+    TRAVERSE_TP_FR: 250.25
+  response: 641056250060FA4
+- expected_values:
+    TRAVERSE_TP_FR: 253
+  response: 641056250060FD0
