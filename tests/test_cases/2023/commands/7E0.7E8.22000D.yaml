@@ -9,5 +9,5 @@ test_cases:
     7E80462000D0F
     7EA0462000D0F
 - expected_values:
-    TRAVERSE_VSS: 138
-  response: 7E80462000D8A
+    TRAVERSE_VSS: null
+  response: 7E80462000DFF
