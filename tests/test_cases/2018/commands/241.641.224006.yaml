@@ -1,0 +1,5 @@
+command_id: 241.641.224006
+test_cases:
+- expected_values:
+    TRAVERSE_TID_FR: 2148475388
+  response: 64107624006800F21FC
