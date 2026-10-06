@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.220010|fc=1
+test_cases:
+- expected_values:
+    TRAVERSE_MAF: 6.35
+  response: 7E805620010027B
+- expected_values:
+    TRAVERSE_MAF: 6.42
+  response: '7E8056200100282'
+- expected_values:
+    TRAVERSE_MAF: 6.58
+  response: '7E8056200100292'
+- expected_values:
+    TRAVERSE_MAF: 7.63
+  response: 7E80562001002FB
+- expected_values:
+    TRAVERSE_MAF: 8.4
+  response: '7E8056200100348'
+- expected_values:
+    TRAVERSE_MAF: 17.22
+  response: 7E80562001006BA
+- expected_values:
+    TRAVERSE_MAF: 38.27
+  response: 7E8056200100EF3
