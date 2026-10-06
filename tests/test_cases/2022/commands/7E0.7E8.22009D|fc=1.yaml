@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22009D|fc=1
+test_cases:
+- expected_values:
+    TRAVERSE_TOTAL_FUEL_CONSUMPTION_RATE: 0.62
+  response: 7E80762009D001F001F
+- expected_values:
+    TRAVERSE_TOTAL_FUEL_CONSUMPTION_RATE: 1.02
+  response: 7E80762009D00330033
+- expected_values:
+    TRAVERSE_TOTAL_FUEL_CONSUMPTION_RATE: 1.38
+  response: 7E80762009D00450045

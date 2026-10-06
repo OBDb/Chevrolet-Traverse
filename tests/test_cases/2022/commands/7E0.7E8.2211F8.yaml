@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211F8
+test_cases:
+- expected_values:
+    TRAVERSE_MIS_HISTORY_5: 0
+  response: 7E8056211F80000
+- expected_values:
+    TRAVERSE_MIS_HISTORY_5: 1
+  response: 7E8056211F80001

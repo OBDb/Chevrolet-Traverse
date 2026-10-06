@@ -1,0 +1,11 @@
+command_id: 7E2.7EA.221991|fc=1
+test_cases:
+- expected_values:
+    TRAVERSE_TC_SLIP_VSS: 0
+  response: 7EA056219910000
+- expected_values:
+    TRAVERSE_TC_SLIP_VSS: 42.5
+  response: 7EA056219910154
+- expected_values:
+    TRAVERSE_TC_SLIP_VSS: 320.125
+  response: 7EA056219910A01

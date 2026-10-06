@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     TRAVERSE_MISFIRES_C5_CUR: 0
   response: 7E8046211EA00
+- expected_values:
+    TRAVERSE_MISFIRES_C5_CUR: 2
+  response: 7E8046211EA02
