@@ -1,0 +1,32 @@
+command_id: 7E0.7E8.221940
+test_cases:
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 26
+  response: '7E80462194042'
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 27
+  response: '7E80462194043'
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 28
+  response: '7E80462194044'
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 30
+  response: '7E80462194046'
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 33
+  response: '7E80462194049'
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 34
+  response: 7E8046219404A
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 36
+  response: 7E8046219404C
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 38
+  response: 7E8046219404E
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 39
+  response: 7E8046219404F
+- expected_values:
+    TRAVERSE_ATF_T_VAR_1: 40
+  response: '7E80462194050'

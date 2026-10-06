@@ -1,0 +1,17 @@
+command_id: 7E0.7E8.221564
+test_cases:
+- expected_values:
+    TRAVERSE_AC_HIGH_SIDE_P: 46.46
+  response: '7E80462156417'
+- expected_values:
+    TRAVERSE_AC_HIGH_SIDE_P: 48.48
+  response: '7E80462156418'
+- expected_values:
+    TRAVERSE_AC_HIGH_SIDE_P: 50.5
+  response: '7E80462156419'
+- expected_values:
+    TRAVERSE_AC_HIGH_SIDE_P: 52.52
+  response: 7E8046215641A
+- expected_values:
+    TRAVERSE_AC_HIGH_SIDE_P: 92.92
+  response: 7E8046215642E

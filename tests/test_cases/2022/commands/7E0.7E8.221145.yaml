@@ -1,0 +1,32 @@
+command_id: 7E0.7E8.221145
+test_cases:
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 0
+  response: '7E80462114500'
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 15
+  response: 7E8046211450F
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 17
+  response: '7E80462114511'
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 21
+  response: '7E80462114515'
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 66
+  response: '7E80462114542'
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 87
+  response: '7E80462114557'
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 165
+  response: 7E804621145A5
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 168
+  response: 7E804621145A8
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 171
+  response: 7E804621145AB
+- expected_values:
+    TRAVERSE_HEATED_OXYGEN_SENS: 179
+  response: 7E804621145B3
