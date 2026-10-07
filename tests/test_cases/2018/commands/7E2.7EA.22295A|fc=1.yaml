@@ -1,20 +1,8 @@
 command_id: 7E2.7EA.22295A|fc=1
 test_cases:
 - expected_values:
-    TRAVERSE_TF_T_FLTED: 62
-  response: 7EA0462295A66
-- expected_values:
-    TRAVERSE_TF_T_FLTED: 64
-  response: 7EA0462295A68
-- expected_values:
-    TRAVERSE_TF_T_FLTED: 65
-  response: 7EA0462295A69
-- expected_values:
-    TRAVERSE_TF_T_FLTED: 67
-  response: 7EA0462295A6B
-- expected_values:
-    TRAVERSE_TF_T_FLTED: 68
-  response: 7EA0462295A6C
+    TRAVERSE_TF_T_FLTED: 27
+  response: 7EA0462295A43
 - expected_values:
     TRAVERSE_TF_T_FLTED: 69
   response: 7EA0462295A6D

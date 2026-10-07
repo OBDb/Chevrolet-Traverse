@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     TRAVERSE_MIS_HISTORY_2: 0
   response: '7E8056212020000'
+- expected_values:
+    TRAVERSE_MIS_HISTORY_2: 2
+  response: '7E8056212020002'

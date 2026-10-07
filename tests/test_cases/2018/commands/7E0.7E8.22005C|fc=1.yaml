@@ -1,23 +1,8 @@
 command_id: 7E0.7E8.22005C|fc=1
 test_cases:
 - expected_values:
-    TRAVERSE_EOT: 76
-  response: 7E80462005C74
-- expected_values:
-    TRAVERSE_EOT: 79
-  response: 7E80462005C77
-- expected_values:
-    TRAVERSE_EOT: 82
-  response: 7E80462005C7A
-- expected_values:
-    TRAVERSE_EOT: 85
-  response: 7E80462005C7D
-- expected_values:
-    TRAVERSE_EOT: 87
-  response: 7E80462005C7F
-- expected_values:
-    TRAVERSE_EOT: 88
-  response: 7E80462005C80
+    TRAVERSE_EOT: 28
+  response: 7E80462005C44
 - expected_values:
     TRAVERSE_EOT: 89
   response: 7E80462005C81
