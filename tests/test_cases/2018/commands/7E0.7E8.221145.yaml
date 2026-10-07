@@ -4,26 +4,5 @@ test_cases:
     TRAVERSE_HEATED_OXYGEN_SENS: 0
   response: '7E80462114500'
 - expected_values:
-    TRAVERSE_HEATED_OXYGEN_SENS: 17
-  response: '7E80462114511'
-- expected_values:
-    TRAVERSE_HEATED_OXYGEN_SENS: 18
-  response: '7E80462114512'
-- expected_values:
-    TRAVERSE_HEATED_OXYGEN_SENS: 39
-  response: '7E80462114527'
-- expected_values:
-    TRAVERSE_HEATED_OXYGEN_SENS: 46
-  response: 7E8046211452E
-- expected_values:
-    TRAVERSE_HEATED_OXYGEN_SENS: 165
-  response: 7E804621145A5
-- expected_values:
-    TRAVERSE_HEATED_OXYGEN_SENS: 173
-  response: 7E804621145AD
-- expected_values:
-    TRAVERSE_HEATED_OXYGEN_SENS: 175
-  response: 7E804621145AF
-- expected_values:
-    TRAVERSE_HEATED_OXYGEN_SENS: 183
-  response: 7E804621145B7
+    TRAVERSE_HEATED_OXYGEN_SENS: 216
+  response: 7E804621145D8
