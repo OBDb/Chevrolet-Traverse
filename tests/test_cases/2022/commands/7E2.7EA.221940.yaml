@@ -4,5 +4,5 @@ test_cases:
     TRAVERSE_ATF_T: 26
   response: 7EA0462194042
 - expected_values:
-    TRAVERSE_ATF_T: 73
-  response: 7EA0462194071
+    TRAVERSE_ATF_T: 79
+  response: 7EA0462194077
