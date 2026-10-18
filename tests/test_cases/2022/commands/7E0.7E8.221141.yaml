@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.221141
 test_cases:
 - expected_values:
+    TRAVERSE_IGN_1_V: 12.1
+  response: '7E80462114179'
+- expected_values:
     TRAVERSE_IGN_1_V: 13.6
   response: '7E80462114188'
 - expected_values:
