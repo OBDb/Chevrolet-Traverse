@@ -417,7 +417,7 @@
   "signals": [
     {"id": "TRAVERSE_FUEL_TANK_P", "path": "Fuel", "fmt": { "len": 16, "max": 1.96, "div": 33333.3333333333, "unit": "psi" }, "name": "Fuel tank pressure"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1940"}, "freq": 5,
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "1940"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_ATF_T_VAR_3", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 3"}
   ]},
@@ -453,7 +453,7 @@
   "signals": [
     {"id": "TRAVERSE_ATF_T_VAR_7", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 7"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "1940"}, "freq": 5,
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "1940"}, "freq": 5, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_ATF_T_VAR_5", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 5"}
   ]},
@@ -461,7 +461,7 @@
   "signals": [
     {"id": "TRAVERSE_TRANS_INPUT_SHFT_SPD", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "rpm" }, "name": "Transmission input shaft speed"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "1942"}, "freq": 0.25,
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "1942"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_OUTPUT_SHFT_SPD", "path": "Movement", "fmt": { "len": 8, "max": 63.75, "div": 4, "unit": "rpm" }, "name": "Output shaft speed"}
   ]},
