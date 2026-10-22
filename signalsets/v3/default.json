@@ -325,11 +325,11 @@
   "signals": [
     {"id": "TRAVERSE_1_2_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "1-2 shift time"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1994"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1994"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_2_3_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "2-3 shift time"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1995"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1995"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_3_4_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "3-4 shift time"}
   ]},
