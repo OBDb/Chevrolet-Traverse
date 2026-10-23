@@ -313,7 +313,7 @@
   "signals": [
     {"id": "TRAVERSE_ATF_T_VAR_1", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1991"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1991"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_TQ_CONV_CLU_SLIP_SPD", "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
   ]},
@@ -345,7 +345,7 @@
   "signals": [
     {"id": "TRAVERSE_3_4_SHIFT_ERROR", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "3-4 shift error"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "199A"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "199A"}, "freq": 0.25, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_CURRENT_GEAR_7E0", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
   ]},
@@ -457,7 +457,7 @@
   "signals": [
     {"id": "TRAVERSE_ATF_T_VAR_5", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 5"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "1941"}, "freq": 1,
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "1941"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_TRANS_INPUT_SHFT_SPD", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "rpm" }, "name": "Transmission input shaft speed"}
   ]},
