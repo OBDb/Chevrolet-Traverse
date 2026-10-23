@@ -4,6 +4,9 @@ test_cases:
     TRAVERSE_TP_FR: 222.75
   response: 641056250060DEC
 - expected_values:
+    TRAVERSE_TP_FR: 225.5
+  response: '641056250060E18'
+- expected_values:
     TRAVERSE_TP_FR: 239.25
   response: 641056250060EF4
 - expected_values:
