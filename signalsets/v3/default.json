@@ -317,11 +317,11 @@
   "signals": [
     {"id": "TRAVERSE_TQ_CONV_CLU_SLIP_SPD", "path": "Movement", "fmt": { "len": 16, "max": 4095.875, "min": -4096, "div": 8, "sign": true, "unit": "rpm" }, "name": "Torque converter clutch slip speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1992"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1992"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_LAST_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "Last shift time"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1993"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1993"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
     {"id": "TRAVERSE_1_2_SHIFT_TIME", "path": "Engine", "fmt": { "len": 8, "max": 6.375, "div": 40, "unit": "seconds" }, "name": "1-2 shift time"}
   ]},
