@@ -1,8 +1,8 @@
 command_id: 241.641.225006
 test_cases:
 - expected_values:
-    TRAVERSE_TP_FR: 222.75
-  response: 641056250060DEC
+    TRAVERSE_TP_FR: 217.25
+  response: 641056250060D94
 - expected_values:
     TRAVERSE_TP_FR: 225.5
   response: '641056250060E18'
