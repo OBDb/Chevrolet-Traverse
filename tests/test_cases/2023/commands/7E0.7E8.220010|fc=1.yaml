@@ -4,6 +4,9 @@ test_cases:
     TRAVERSE_MAF: 0
   response: '7E8056200100000'
 - expected_values:
+    TRAVERSE_MAF: 5.57
+  response: 7E805620010022D
+- expected_values:
     TRAVERSE_MAF: 11.75
   response: '7E8056200100497'
 - expected_values:

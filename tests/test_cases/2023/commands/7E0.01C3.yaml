@@ -1,0 +1,32 @@
+command_id: 7E0.01C3
+test_cases:
+- expected_values:
+    FLI_A: 100
+    FLI_A_SUP: 1
+    FLI_B: 57.64706
+    FLI_B_SUP: 1
+  response: 7E80541C303FF93
+- expected_values:
+    FLI_A: 100
+    FLI_A_SUP: 1
+    FLI_B: 60
+    FLI_B_SUP: 1
+  response: 7E80541C303FF99
+- expected_values:
+    FLI_A: 100
+    FLI_A_SUP: 1
+    FLI_B: 67.05882
+    FLI_B_SUP: 1
+  response: 7E80541C303FFAB
+- expected_values:
+    FLI_A: 100
+    FLI_A_SUP: 1
+    FLI_B: 69.80392
+    FLI_B_SUP: 1
+  response: 7E80541C303FFB2
+- expected_values:
+    FLI_A: 100
+    FLI_A_SUP: 1
+    FLI_B: 72.15686
+    FLI_B_SUP: 1
+  response: 7E80541C303FFB8
