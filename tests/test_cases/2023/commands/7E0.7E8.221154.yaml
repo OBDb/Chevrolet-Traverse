@@ -1,8 +1,8 @@
 command_id: 7E0.7E8.221154
 test_cases:
 - expected_values:
-    TRAVERSE_EOT_CALC: 21
-  response: 7E8046211543D
+    TRAVERSE_EOT_CALC: 19
+  response: 7E8046211543B
 - expected_values:
     TRAVERSE_EOT_CALC: 102
   response: 7E8046211548E
