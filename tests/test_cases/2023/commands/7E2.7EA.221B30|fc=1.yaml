@@ -1,8 +1,8 @@
 command_id: 7E2.7EA.221B30|fc=1
 test_cases:
 - expected_values:
-    TRAVERSE_CURRENT_GEAR: -1
-  response: 7EA04621B3002
+    TRAVERSE_CURRENT_GEAR: -2
+  response: 7EA04621B3001
 - expected_values:
     TRAVERSE_CURRENT_GEAR: 9
   response: 7EA04621B300C
